@@ -74,7 +74,7 @@ df5=pd.DataFrame(prereq_classroomhrs, columns=['Course Pre-requisists & class ro
 df6=pd.DataFrame()
 df6=pd.concat([df,df1,df2,df3,df4,df5], axis=1)
 
-df6.to_csv(r'/Users/Gayatri/Desktop/NYIT_UG_Srapedcourses.csv', header='True', index= 'False', encoding = 'utf-8')
+df6.to_csv(r'NYIT_UG_Srapedcourses.csv', header='True', index= 'False', encoding = 'utf-8')
 
 
 
