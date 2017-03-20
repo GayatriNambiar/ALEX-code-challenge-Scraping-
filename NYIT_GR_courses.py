@@ -55,16 +55,10 @@ for i in Allinfo[3::5]:
 for i in Allinfo[4::5]:
 		description.append(i)
 for i in description:
-		#print(description)
-		#print(i)
     		i = i.strip()
 		coursedescription.append(i.split('\t')[0])
-			#print(i.split('\t'))
-		
-		
 		try:
 			prereq_classroomhrs.append(i.split('\t')[-1])
-
 		except:
 			pass
 		   	
@@ -85,7 +79,7 @@ df5=pd.DataFrame(prereq_classroomhrs, columns=['Course Pre-requisists & class ro
 df6=pd.DataFrame()
 df6=pd.concat([df,df1,df2,df3,df4,df5], axis=1)
 
-df6.to_csv(r'/home/gayatri/Desktop/nyit_gr_CoursesData.csv', header='True', index= 'False', encoding = 'utf-8')
+df6.to_csv(r'nyit_gr_CoursesData.csv', header='True', index= 'False', encoding = 'utf-8')
 
 
 
